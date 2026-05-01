@@ -1,7 +1,5 @@
 # ECG Anomaly Detection — Autoencoder (TensorFlow/Keras)
 
-> Projet universitaire — Licence 3 Informatique, Université de La Rochelle (2025)  
-> Réalisé par **Elvire OLOGOUDOU** & Ndeye Fatou FALL
 
 ---
 
@@ -17,24 +15,24 @@ L'idée : un autoencodeur entraîné uniquement sur des signaux sains apprend à
 
 ```
 Dataset ECG (.mat)
-      │
-      ▼
+      
+      
 Prétraitement
-  ├── Filtre Butterworth (passe-bas, suppression du bruit)
-  └── Convolution + normalisation
-      │
-      ▼
+   Filtre Butterworth (passe-bas, suppression du bruit)
+   Convolution + normalisation
+      
+      
 Autoencodeur (Keras/TensorFlow)
-  ├── Encodeur  : couches Dense avec activation ReLU
-  └── Décodeur  : reconstruction du signal d'entrée
-      │
-      ▼
+   Encodeur  : couches Dense avec activation ReLU
+   Décodeur  : reconstruction du signal d'entrée
+      
+      
 Calcul MSE (erreur de reconstruction)
-      │
-      ▼
+      
+      
 Seuillage au 95e percentile
-      │
-      ▼
+      
+      
 Classification : Normal / Anomalie
 ```
 
@@ -42,13 +40,13 @@ Classification : Normal / Anomalie
 
 ## Technologies
 
-| Outil | Rôle |
-|---|---|
-| Python | Langage principal |
-| TensorFlow / Keras | Construction et entraînement de l'autoencodeur |
-| NumPy / SciPy | Prétraitement du signal (filtre Butterworth, convolution) |
-| Matplotlib | Visualisation des signaux et des erreurs de reconstruction |
-| Jupyter Notebook | Environnement de développement |
+ Outil | Rôle 
+
+ Python | Langage principal |
+ TensorFlow / Keras | Construction et entraînement de l'autoencodeur |
+ NumPy / SciPy | Prétraitement du signal (filtre Butterworth, convolution) |
+ Matplotlib | Visualisation des signaux et des erreurs de reconstruction |
+ Jupyter Notebook | Environnement de développement |
 
 ---
 
@@ -68,18 +66,7 @@ Classification : Normal / Anomalie
 
 ---
 
-## Lancer le projet
 
-```bash
-# Cloner le dépôt
-git clone https://github.com/eologodev/ecg-anomaly-detection
-
-# Installer les dépendances
-pip install tensorflow keras numpy scipy matplotlib jupyter
-
-# Lancer le notebook
-jupyter notebook "ECG (1).ipynb"
-```
 
 ---
 
@@ -87,9 +74,9 @@ jupyter notebook "ECG (1).ipynb"
 
 ```
 .
-├── ECG (1).ipynb       — notebook principal (prétraitement + modèle + résultats)
-├── ecg_dataset.mat     — dataset ECG
-└── Rapport.pdf         — rapport complet du projet
+ ECG (1).ipynb       — notebook principal (prétraitement + modèle + résultats)
+ ecg_dataset.mat     — dataset ECG
+ Rapport.pdf         — rapport complet du projet
 ```
 
 ---
